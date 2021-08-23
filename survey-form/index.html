@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB - Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("goku-bg.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+        }
+
+        #title {
+            font-size: 120%;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        #description {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        #container {
+            background-color: #121C4F;
+            width: 53%;
+            height: auto;
+            margin-top: 40px;
+            margin-left: 50px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+        }
+
+        #survey-form {
+            padding-left: 25px;
+        }
+
+        #survey-form input, #dropdown, #textarea     {
+            font-family: 'Roboto Mono', monospace;
+            width: 90%;
+            border-radius: 5px;
+            padding: 2px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #survey-form #submit {
+            display: block;
+            width: 35%;
+            padding: 5px;
+            font-size: 105%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            background-color: #000000;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        #survey-form #radio, #survey-form #cbox {
+            display: inline;
+            width: 20px;
+            margin-bottom: 2px;
+        }
+
+        #survey-form label {
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                background-color: black;
+            }
+
+            #container {
+                width: 90%;
+                margin-top: 60px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #survey-form input, #dropdown, #textarea {
+            font-family: 'Roboto Mono', monospace;
+            width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Are you a true Dragon Balls fan ?</h1>
+        <p id="description">Here is a small survey to test your DB madness.</p>
+        <form action="#" id="survey-form">
+            <label id="name-label">
+                Name </label> <input type="text" name="name" id="name" placeholder="Your name please." required>
+            
+            <label id="email-label">
+                Email </label><input type="email" name="email" id="email" placeholder="Your email please." required>
+            
+            <label id="number-label">
+                Age (optional) </label><input type="number" name="number" id="number" placeholder="Your age please." min="0" max="20">
+            
+            <label for="dropdown">
+                Select the strongest DB hero
+            </label>
+                <select name="dropdown" id="dropdown">
+                    <option value="vegeta">Vegeta</option>
+                    <option value="goku">Goku</option>
+                    <option value="gohan">Gohan</option>
+                    <option value="goten">Goten</option>
+                    <option value="trunks">Trunks</option>
+                </select>
+            
+            <p>Which is the good namek ?</p> 
+            <label for="radio">
+                <input type="radio" value="picollo" name="radio" id="radio" > Picollo
+            </label>
+            <label for="radio">
+                <input type="radio" value="Kami" name="radio" id="radio" > Kami
+            </label>
+            <label for="radio">
+                <input type="radio" value="dende" name="radio" id="radio" > Dende
+            </label>
+            <label for="radio">
+                <input type="radio" value="both" name="radio" id="radio" > Picollo & Kami
+            </label>
+            <p>Tick the sons of Goku</p> 
+            <label for="cbox">
+                <input type="checkbox" value="picollo" name="checkbox" id="cbox" > Picollo
+            </label>
+            <label for="radio">
+                <input type="checkbox" value="gohan" name="checkbox" id="cbox" > Gohan
+            </label>
+            <label for="radio">
+                <input type="checkbox" value="goten" name="checkbox" id="cbox" > Goten
+            </label>
+            <label for="radio">
+                <input type="checkbox" value="vegeta" name="checkbox" id="cbox" > Vegeta
+            </label>
+            <p>Any comments or suggestions ?</p>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your comment here."></textarea>
+            <label for="button">
+                <input id="submit" type="submit" value="Submit">
+            </label>
+        </form>
+    </div>
+</body>
+</html>
