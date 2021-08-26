@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Balls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: peachpuff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
+        #header {
+            background-color: white;
+            
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        #header-img {
+            width: 35px;
+            height: auto;
+            float: left;
+            margin-right: 5px;
+            margin-left: 5px
+        }
+        #nav-bar {
+            float: left;
+        }
+        .nav-link {
+            display: inline-block;
+            padding: 8px;
+            font-size: 120%;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            background-color: peachpuff;
+            color: white;
+        }
+        #container {
+            background-color: white;
+            width: 80%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+        }
+        #video-section {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #form {
+            margin: 50px;
+            text-align: center;
+        }
+        #form label {
+            display: block;
+            font-size: 150%;
+        }
+        #email {
+            width: 425px;
+            margin: 20px;
+            padding: 7px;
+            font-family: 'Roboto Mono', monospace;
+            border-radius: 10px;
+        }
+        #submit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7px;
+            font-family: 'Roboto Mono', monospace;
+            background-color: peachpuff;
+            border-radius: 20%;
+        }
+        @media (max-width: 600px) {
+            .nav-link {
+                display: none;
+            }
+            #header-img {
+                float: none;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #container {
+                width: 70%;
+            }
+            #video {
+                height: 260px;
+                width: 300px;
+            }
+            #email {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="dragon-logo.png" alt="">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#container">HOME</a>
+            <a class="nav-link" href="#video-section">VIDEO</a>
+            <a class="nav-link" href="#form-section">SUBSCRIBE</a>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="video-section">
+            <h1>Do you know Prince Vegeta ?</h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x90wbBGR59Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="form-section">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <label for="email">
+                    <b>Subscribe for awesome contents</b>
+                </label>  
+                <input type="email" name="email" id="email" placeholder="Your email here">  
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
