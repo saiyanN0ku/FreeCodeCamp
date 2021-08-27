@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehal Zaman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+        p {
+            font-size: 120%;
+        }
+        #navbar {
+            background-color: #8585ad;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .nav-link {
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            font-size: 140%;
+            font-weight: bold;
+            color: white;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #8585ad;
+        }
+        #welcome-section {
+            width: 100%;
+            height: 100vh;
+        }
+        #welcome-section-photo {
+            border-radius: 50%;
+            margin-top: 100px;
+            width: 400px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 250%;
+            color: #8585ad;
+        }
+        h2 {
+                padding-top: 50px;
+                font-size: 250%;
+                text-align: center;
+            }
+        #welcome-span-text {
+            display: block;
+            text-align: center;
+            font-size: 130%;
+        }
+        #about {
+            width: 100%;
+            background-color: #8585ad;
+            color: white;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+        #about-text {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #projects {
+            background-color: white;
+            color: black;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .project-tile {
+            background-color: #8585ad;
+            border-radius: 5px;
+            width: 30%;
+            margin: 5px;
+            padding: 5px;
+        }
+        .project-icon {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .project-tile h2 {
+            font-size: 150%;
+            padding-top: 5px;
+        }
+        .project-icon-link {
+            text-decoration: none;
+            color: black;
+        }
+        #socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        #socials a {
+            display: block;
+            padding: 15px;
+            background-color: #8585ad;
+            color: white;
+            margin-left: 5px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 14px;
+        }
+        @media (max-width: 600px) {
+            .nav-link {
+                font-size: 100%;
+            }
+            div #welcome-section {
+                width: 70%;
+            }
+            #welcome-section-photo {
+                width: 90%;
+                height: 50vh;
+            }
+            h1 {
+                margin-top: 30px;
+                font-size: 150%;
+            }
+            h2 {
+                margin-top: 30px;
+                font-size: 150%;
+            }
+            #welcome-span-text {
+                font-size: 100%;
+            }
+            #about-text {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            #projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project-tile {
+                width: 80%;
+            }
+            .project-tile h2 {
+                font-size: 80%;
+                margin-top: 1px;
+            }
+    }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="nav-link" id="#" href="#about">ABOUT</a>
+        <a class="nav-link" id="#" href="#projects">PROJECTS</a>
+        <a class="nav-link" id="#" href="#socials">SOCIALS</a>
+    </nav>
+    <div id="welcome-section">
+        <img id="welcome-section-photo" src="goku-welcome-2.jfif" alt="welcome section photo">
+        <h1>NEHAL ZAMAN</h1>
+        <span id="welcome-span-text">Student | Learner | CTF Player</span>
+    </div>
+    <div id="about">
+        <h2>About Me</h2>
+        <div id="about-text">
+            <p>
+                Hi, this is Nehal Zaman, a wannabe security researcher and cybersecurity enthusiast.
+            </p>
+            <p>
+                Currently I am doing BTech. CSE with specialisation in cybersecurity and digital forensics from Vellore Institute of Technology, Bhopal campus.
+            </p>
+            <p>
+                I like to solve challenging problems. I play CTFs (Capture The Flag competitions) on different platforms like HackTheBox, Tryhackme etc. I also do web development, specially backend development.
+            </p>
+            <p>
+                Ocassionaly I also do bug bounty on platforms like hackerone, bugcrowd and intigriti.
+            </p>
+        </div>
+    </div>
+    <h2>Projects</h2>
+    <div id="projects">
+        <div class="project-tile">
+            <img class="project-icon" src="crackhell-icon.png" alt="">
+            <a class="project-icon-link" target="__blank" href="https://github.com/N3H4L/CrackHell"><h2>CrackHell v1.0</h2></a>
+            <p>CrackHell is a fast hash cracker that does not rely on dictionary based attacks.</p>
+            <p>Indeed it requests to an Web API to query for already cracked hash.</p>
+        </div>
+        <div class="project-tile">
+            <img class="project-icon" src="crackhell-icon.png" alt="">
+            <a class="project-icon-link" target="__blank" href="https://github.com/N3H4L/CrackHell"><h2>CrackHell v1.0</h2></a>
+            <p>CrackHell is a fast hash cracker that does not rely on dictionary based attacks.</p>
+            <p>Indeed it requests to an Web API to query for already cracked hash.</p>
+        </div>
+        <div class="project-tile">
+            <img class="project-icon" src="crackhell-icon.png" alt="">
+            <a class="project-icon-link" target="__blank" href="https://github.com/N3H4L/CrackHell"><h2>CrackHell v1.0</h2></a>
+            <p>CrackHell is a fast hash cracker that does not rely on dictionary based attacks.</p>
+            <p>Indeed it requests to an Web API to query for already cracked hash.</p>
+        </div>        
+    </div>
+    <h2>My social links</h2>
+    <div id="socials">
+        <a id="profile-link" href="https://github.com/N3H4L" target="__blank">GITHUB</a>
+        <a id="profile-link" href="https://www.linkedin.com/in/nehalzaman/" target="__blank">LINKEDIN</a>
+        <a id="profile-link" href="https://twitter.com/pwnersec" target="__blank">TWITTER</a>
+    </div>
+    <footer>
+        &copy; Nehal Zaman; 2021
+    </footer>
+</body>
+</html>
