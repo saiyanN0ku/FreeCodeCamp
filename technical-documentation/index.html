@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100%;
+            background-color: #66ccff;
+        }
+        #main-doc {
+            margin-left: 30%;
+            width: 70%;
+            background-color: #9999ff;
+            padding: 50px;
+        }
+        #navbar {
+            text-align: center;
+        }
+        #navbar header {
+            text-align: center;
+            margin: 10px;
+            font-size: 150%;
+            font-weight: bold;
+        }
+        .main-section header {
+            text-align: center;
+            display: block;
+            font-size: 120%;
+            font-weight: bold;
+        }
+        .main-section {
+            margin-bottom: 50px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: 120%;
+            padding: 13px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #9999ff;
+            color: white;
+
+        }
+        code {
+            background-color: gray;
+            display: block;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            font-size: 120%;
+        }
+        @media (max-width: 600px) {
+            #container {
+                flex-direction: column;
+            }
+            #navbar {
+                position: unset;
+                width: 100%;
+            }
+            #main-doc {
+                margin-left: 0;
+                width: 72%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <header>
+                Python
+            </header>
+            <hr>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Why_python?" class="nav-link">Why python?</a>
+            <a href="#Hello_world" class="nav-link">Hello world</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Conditional_If_Else" class="nav-link">Conditional If Else</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>
+                    Introduction
+                </header>
+                <p>
+                    Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+                </p>
+                <p>
+                    Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible. Python 2 was discontinued with version 2.7.18 in 2020.
+                </p>
+                <p>
+                    Python consistently ranks as one of the most popular programming languages.
+                </p>
+            </section>
+            <section class="main-section" id="Why_python?">
+                <header>
+                    Why python?
+                </header>
+                <p>
+                    <ol>
+                        <li>Career Opportunities and Salary</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Web Development</li>
+                        <li>Scripting and Automation</li>
+                        <li>Libraries and Packages</li>
+                        <li>Testing Frameworks</li>
+                        <li>Portable and Extensible</li>
+                        <li>Active Community</li>
+                        <li>Easy to Use</li>
+                    </ol>      
+                </p>
+            </section>
+            <section class="main-section" id="Hello_world">
+                <header>
+                    Hello world
+                </header>
+                <p>
+                    The simplest program in Python consists of a line that tells the computer a command. Traditionally, the first program of every programmer in every new language prints "Hello, World!" Start up your favorite text editor and type the following :
+                </p>
+                <code>
+                    print("Hello, World!")
+                </code>
+                <p>
+                    Save the code in a file with a .py extension. Open a terminal and type the following : 
+                </p>
+                <code>
+                    $ python helloworld.py
+                </code>
+                <p>
+                    We can see the below output : 
+                </p>
+                <code>
+                    Hello, World!
+                </code>
+                <p>
+                    Congrats! You have ran your very first code.
+                </p>
+                <p>
+                    Now let us understand what we have done here. We just called a function called <em>print()</em> with the text <em>"Hello, World!"</em> as an argument. This function is typically used to display something to the screen. So when we ran the code, we get to see <em>"Hello, World!</em> on the screen.
+                </p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>
+                    Variables
+                </header>
+                <p>
+                    Python has no command for declaring a variable.           
+                </p>
+                <p>
+                    A variable is created the moment you first assign a value to it.
+                </p>
+                <code>
+                    x = 5 <br>
+                    y = "John" <br>
+                    print(x) <br>
+                    print(y)
+                </code>
+                <p>
+                    When we run the code, we can see the below result :
+                </p>
+                <code>
+                    5 <br>
+                    John
+                </code>
+            </section>
+            <section class="main-section" id="Conditional_If_Else">
+                <header>
+                    Conditional If Else
+                </header>
+                <p>
+                    Python if Statement is used for decision-making operations. It contains a body of code which runs only when the condition given in the if statement is true. If the condition is false, then the optional else statement runs which contains some code for the else condition.
+                </p>
+                <code>
+                    x = 1 <br>
+                    y = 2 <br><br>
+                    if x > y: <br>
+                    &nbsp;&nbsp;print("x is greater than y") <br>
+                    else: <br>
+                    &nbsp;&nbsp;print("y is greater than x")
+                </code>
+                <p>
+                    When we run the code, we get output as : 
+                </p> 
+                <code>
+                    y is greater than x
+                </code>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
